@@ -92,7 +92,7 @@
     };
     //YOUR TURN: add your Mapbox token
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94LWNvbW11bml0eSIsImEiOiJja2tkN21jcjAwMG51MnBxdHAxemdueGpzIn0.e0IzLkytGq4pcGGieP8KNA'; //Mapbox token
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXBpc2hrbyIsImEiOiJja2xneXRoaG0xNHphMnVwbWl1MXZ5Z2xwIn0.0KB2F-uvMgdoaqd582XbhQ'; //Mapbox token
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
@@ -104,7 +104,7 @@
     $(document).ready(function () {
       $.ajax({
         type: "GET",
-        'https://docs.google.com/spreadsheets/d/e/2PACX-1vRsh2Hk5TE2A4PFZGtQgFw2D4EtU6tGiB1h91-emXfSXEZfI2Es7eIOONWwdztpWEIUiy8BKI5ZD_Rv/gviz/tq?tqx=out:csv&sheet=Sheet1,
+        'https://docs.google.com/spreadsheets/d/1vxc3vURDeac3LjRYUnZ46OS46iyBHMnGzlzr6SDx9FE/gviz/tq?tqx=out:csv&sheet=Sheet1',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
